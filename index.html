@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://api.api-ninjas.com ">
+    <title>Music Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar/nav.css">
+    <link rel="stylesheet" href="contact/contact.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-nav-bar-container">
+
+            <div class="logo-div">
+                <img class="logo" src="logo.png" alt="">
+            </div>
+
+            <div class="nav-bar-items-div item-center">
+                <a id="home-nav" class="nav-item" href="#home">Home</a>
+                <a id="store-nav" class="nav-item" href="#store">Store</a>
+                <a id="contact-nav" class="nav-item" href="#contact">Contact</a>
+                <a id="about-nav" class="nav-item" href="#about">About</a>
+            </div>
+
+        </div>
+
+
+        <section class="page-container home-container" id="home">
+            <p>This is home </p>
+            <img src="" alt="">
+        </section>
+
+        <section class="page-container store-container" id="store">
+            <p>This is store </p>
+        </section>
+
+        <section class="page-container contact-container" id="contact">
+            <div class="form-div">
+                <h1>Contact us...</h1>
+                <form class="form-container" action="/ok">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" name="Submit" id="submit_btn">
+
+                </form>
+            </div>
+        </section>
+
+        <section class="page-container about-container" id="about">
+            <p>This is about </p>
+        </section>
+
+    </div>
+</body>
+
+
+<script type="module" src="script.js"></script>
+<script type="module" src="navbar/nav.js"></script>
+<script type="module" src="contact/contact.js"></script>
+
+</html>

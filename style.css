@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.item-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: #1b1b1b;
+}
+
+.page-container {
+    width: auto;
+    height: 100vh;
+    background-color: #434242;
+    color: #ffffff;
+    padding: 2%;
+    padding-top: 11vh;
+}
+
+.home-container {
+    padding-top: -10vh;
+}
