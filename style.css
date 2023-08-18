@@ -26,3 +26,57 @@
 .home-container {
     padding-top: -10vh;
 }
+
+
+/* popup */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay_show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+
+.popup {
+    width: 30%;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: #2a2a2a;
+    transition: all 1s ease-in-out;
+}
+
+.popup .popup-close {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffee56;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.popup .popup-close:hover {
+    transform: rotate(90deg);
+}
+
+.popup .popup-content {
+    max-height: 40%;
+    color: #ffffff;
+}

@@ -43,7 +43,7 @@
         <section class="page-container contact-container" id="contact">
             <div class="form-div">
                 <h1>Contact us...</h1>
-                <form class="form-container" action="/ok">
+                <div class="form-container">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name">
 
@@ -58,13 +58,22 @@
 
                     <input type="submit" name="Submit" id="submit_btn">
 
-                </form>
+                </div>
             </div>
         </section>
 
         <section class="page-container about-container" id="about">
             <p>This is about </p>
         </section>
+
+        <div id="popup-div" class="overlay">
+            <div class="popup">
+                <a class="popup-close">&times;</a>
+                <div class="popup-content">
+
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
