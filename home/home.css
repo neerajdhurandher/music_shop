@@ -1,1 +1,10 @@
 @import "../style.css";
+
+.home-container{
+    padding: 0;
+    padding-top: 10vh;
+    padding-bottom: 3%;
+    background-image: url("../src/music_records_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

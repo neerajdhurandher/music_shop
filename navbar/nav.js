@@ -6,24 +6,22 @@ let contact_nav_element = document.getElementById("contact-nav");
 let about_nav_element = document.getElementById("about-nav");
 
 
-
 function reset_nav_item_color() {
-    console.log("nav item reset");
-    home_nav_element.style.backgroundColor = "#deb887"
-    store_nav_element.style.backgroundColor = "#deb887"
-    about_nav_element.style.backgroundColor = "#deb887"
-    contact_nav_element.style.backgroundColor = "#deb887"
+    home_nav_element.classList.remove("nav_item_active");
+    store_nav_element.classList.remove("nav_item_active");
+    about_nav_element.classList.remove("nav_item_active");
+    contact_nav_element.classList.remove("nav_item_active")
 }
 
 function set_nav_item_active(nav_item_element) {
     reset_nav_item_color();
-    nav_item_element.style.backgroundColor = "#43f21c";
+    nav_item_element.classList.add("nav_item_active");
 }
 
 function default_nav_state() {
     // default home nav is active
-    set_nav_item_active(contact_nav_element);
-    window.open("#contact", "_self");
+    set_nav_item_active(home_nav_element);
+    window.open("#home", "_self");
 }
 
 default_nav_state();

@@ -4,6 +4,25 @@
     scroll-behavior: smooth;
 }
 
+/* color variables */
+:root {
+    /* general */
+    --white_color: #ffffff;
+    --black_color: #000000;
+
+    /* nav bar */
+    --navbar_color: #190305;
+    --nav_item_color: #ffffff;
+    --active_nav_color: #FFE39A;
+    --active_nav_item_color: #000000;
+
+    /* contact */
+    --submit_btn_color: #1d1d1d;
+    --submit_btn_hover_color: #000000;
+
+
+}
+
 .item-center {
     display: flex;
     justify-content: center;

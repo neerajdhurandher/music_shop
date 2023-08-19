@@ -1,5 +1,6 @@
 @import "../style.css";
-.contact-container{
+
+.contact-container {
     padding: 0;
     padding-top: 10vh;
     padding-bottom: 3%;
@@ -7,6 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .form-div {
     padding: 2%;
 }
@@ -26,7 +28,7 @@ select,
 textarea {
     width: 80%;
     padding: 15px;
-    border: 1px solid #000000;
+    border: 1px solid var(--black_color);
     border-radius: 5px;
     box-sizing: border-box;
     margin-top: 5px;
@@ -37,8 +39,8 @@ textarea {
 input[type=submit] {
     width: 200px;
     height: 50px;
-    background-color: rgb(29, 29, 29);
-    color: white;
+    background-color: var(--submit_btn_color);
+    color: var(--white_color);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -46,7 +48,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #000000;
+    background-color: var(--submit_btn_hover_color);
 }
 
 label {
@@ -54,6 +56,7 @@ label {
     font-weight: 600;
     margin: 1% 0;
 }
-.validation_error_msg{
-    color: #ffffff;
+
+.validation_error_msg {
+    color: var(--white_color);
 }
