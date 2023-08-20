@@ -1,10 +1,45 @@
 @import "../style.css";
 
-.home-container{
+.home-container {
     padding: 0;
     padding-top: 10vh;
-    padding-bottom: 3%;
     background-image: url("../src/music_records_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.home_content {
+    float: right;
+}
+
+.welcome_text {
+    display: block;
+    margin-top: 15%;
+    font-size: 3rem;
+}
+
+.type_writer_div {
+    padding-left: 5%;
+}
+
+.type_writer_div span {
+    font-size: 2.5rem;
+}
+
+.cursor {
+    animation: cursor_animate .8s linear infinite;
+}
+
+@keyframes cursor_animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
