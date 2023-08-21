@@ -132,4 +132,3 @@ function create_product_cards() {
 }
 
 create_product_cards()
-
