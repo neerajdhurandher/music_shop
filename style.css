@@ -9,12 +9,16 @@
     /* general */
     --white_color: #ffffff;
     --black_color: #000000;
+    --default_bg_color: #1b1b1b;
 
     /* nav bar */
     --navbar_color: #190305;
     --nav_item_color: #ffffff;
     --active_nav_color: #FFE39A;
     --active_nav_item_color: #000000;
+
+    /* store */
+    --add_to_cart_btn_color : #f3c040;
 
     /* contact */
     --submit_btn_color: #1d1d1d;
@@ -30,25 +34,24 @@
 }
 
 .main-container {
-    background-color: #1b1b1b;
+    background-color: var(--default_bg_color);
 }
 
 .page-container {
     width: auto;
-    height: 100vh;
-    background-color: #434242;
+    background-color: var(--default_bg_color);
     color: #ffffff;
-    padding: 2%;
     padding-top: 11vh;
 }
 
-.home-container {
-    padding-top: -10vh;
+.title{
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    padding-left: 2%;
 }
 
-
 /* popup */
-
 .overlay {
     display: none;
     position: fixed;
