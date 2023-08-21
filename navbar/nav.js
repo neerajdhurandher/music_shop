@@ -46,3 +46,26 @@ logo_element.addEventListener("click", () => {
     set_nav_item_active(home_nav_element);
     window.open("#home", "_self");
 })
+
+let sections = document.querySelectorAll(".page-container");
+let nav_items = document.querySelectorAll(".nav-item");
+
+window.onscroll = () => {
+    var current_section = "";
+    sections.forEach((section) => {
+        const section_top = section.offsetTop;
+        if (pageYOffset >= section_top - 60) {
+            current_section = section.getAttribute("id");
+        }
+    });
+
+    nav_items.forEach((nav_item) => {
+        let id = nav_item.href;
+        id = id.split("#");
+
+        if (id[1] == current_section) {
+            set_nav_item_active(nav_item);
+        }
+    })
+
+}
