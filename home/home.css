@@ -1,14 +1,15 @@
 @import "../style.css";
 
 .home-container {
+    height: 100vh;
     padding: 0;
-    padding-top: 10vh;
     background-image: url("../src/music_records_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .home_content {
+    margin-right: 2%;
     float: right;
 }
 

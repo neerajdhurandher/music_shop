@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar/nav.css">
     <link rel="stylesheet" href="home/home.css">
+    <link rel="stylesheet" href="store/store.css">
     <link rel="stylesheet" href="contact/contact.css">
     <link rel="stylesheet" href="about/about.css">
 </head>
@@ -35,21 +36,25 @@
 
         <section class="page-container home-container" id="home">
             <div class="home_content">
-                    <span class="welcome_text">Welcome in Music World Store</span>
-                    <div class="type_writer_div">
-                        <span id="type_writer_item"></span>
-                        <span class="cursor">|</span>
-                    </div>
+                <span class="welcome_text">Welcome in Music World Store</span>
+                <div class="type_writer_div">
+                    <span id="type_writer_item"></span>
+                    <span class="cursor">|</span>
+                </div>
             </div>
         </section>
 
         <section class="page-container store-container" id="store">
-            <p>This is store </p>
+            <p class="title">Our Collection</p>
+            <div class="product_div">
+                <div id="product_container" class="product_container">
+                </div>
+            </div>
         </section>
 
         <section class="page-container contact-container" id="contact">
             <div class="form-div">
-                <h1>Contact us...</h1>
+                <p class="title">Contact us...</p>
                 <div class="form-container">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name">
@@ -71,9 +76,9 @@
 
         <section class="page-container about-container" id="about">
             <div class="about-div">
-                <h1>About us</h1>
+                <p class="title">About us</p>
                 <span class="about_para">
-                    Welcome to Music World! Established in [Year], we are passionate about connecting music lovers
+                    Welcome to Music World! Established in 1986, we are passionate about connecting music lovers
                     with their perfect soundtrack. Our diverse collection of music CDs spans all genres, from classics
                     to new releases. Our knowledgeable team is always ready to assist you in your musical journey.
                     Choose
@@ -120,6 +125,7 @@
 <script type="module" src="script.js"></script>
 <script type="module" src="navbar/nav.js"></script>
 <script type="module" src="home/home.js"></script>
+<script type="module" src="store/store.js"></script>
 <script type="module" src="contact/contact.js"></script>
 
 </html>
